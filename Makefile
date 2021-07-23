@@ -1,9 +1,11 @@
-install:
-		npm ci
+install: 
+		npm install
+ 
+brain-games: 
 		node bin/brain-games.js
-		
-publish:
-	    npm publish  --dry-run
-
-lint:
+ 
+publish: 
+		npm publish --dry-run
+ 
+make lint:
 		npx eslint .
