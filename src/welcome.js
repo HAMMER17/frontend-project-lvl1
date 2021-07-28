@@ -5,6 +5,6 @@ const welcome = () => {
   console.log('');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello ${name}`);
-  return name; 
+  return name;
 };
 export default welcome;

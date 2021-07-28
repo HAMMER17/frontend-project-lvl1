@@ -14,7 +14,7 @@ const game = (description, question, correct) => {
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.
       Let's try again ${name}`);
-      }
+    }
   }
 
   console.log(`congratulations ${name}`);
