@@ -4,3 +4,5 @@
 [![Actions Status](https://github.com/542993/frontend-project-lvl1/workflows/linter-check/badge.svg)](https://github.com/542993/frontend-project-lvl1/actions)
 
 https://asciinema.org/a/bTWCZMa21ULHwWouGWuTak2jz
+
+ https://asciinema.org/a/VMLmpeXZHVhKMoVWNnwdfp4gj

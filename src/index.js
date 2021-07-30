@@ -6,7 +6,7 @@ const game = (description, question, correct) => {
   console.log(description);
   for (let i = 1; i <= 3;) {
     const value = question();
-    const answer = readlineSync.question('Your answer: ');
+    const answer = (readlineSync.question('Your answer: '));
     const correctAnswer = correct(value);
     if (answer === correctAnswer) {
       i += 1;
