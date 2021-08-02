@@ -10,12 +10,12 @@ const game = (description, question, correct) => {
     const correctAnswer = correct(value);
     if (answer === correctAnswer) {
       i += 1;
-      console.log('correct!');
+      console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
     }
   }
 
-  console.log(`congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };
 export default game;
