@@ -13,10 +13,10 @@ const game = (description, question, correct) => {
       console.log('correct');
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.
-      Let's try again ${name}`);
+      Let's try again, ${name}!`);
     }
   }
 
-  console.log(`congratulations ${name}`);
+  console.log(`congratulations, ${name}!`);
 };
 export default game;
