@@ -4,8 +4,8 @@ export const description = 'What is the result of the expression?';
 
 export const question = () => {
   const items = ['+', '-', '*'];
-  const num1 = getRandomInt(50, 40);
-  const num2 = getRandomInt(50, 40);
+  const num1 = getRandomInt(50, 1);
+  const num2 = getRandomInt(50, 1);
   const character = items[getRandomInt(4, 1)];
   const expression = `${num1} ${character} ${num2}`;
   console.log(`Question: ${expression}`);
