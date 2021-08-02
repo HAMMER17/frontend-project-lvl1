@@ -1,4 +1,4 @@
-export const description = 'Answer "yes" if number even otherwise answer "no".';
+export const description = 'Answer "yes" if number is even, otherwise answer "no".';
 
 export const correct = (num) => {
   if (num % 2 === 0) {

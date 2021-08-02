@@ -14,7 +14,7 @@ export const question = () => {
   const hiddenNumber = getRandomInt(3, 1);
   const correctAnswer = result[hiddenNumber];
   result[hiddenNumber] = '..';
-  console.log(result.join(' , '));
+  console.log(result.join(' '));
   return correctAnswer;
 };
 

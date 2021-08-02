@@ -10,10 +10,9 @@ const game = (description, question, correct) => {
     const correctAnswer = correct(value);
     if (answer === correctAnswer) {
       i += 1;
-      console.log('correct');
+      console.log('correct!');
     } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.
-      Let's try again, ${name}!`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
     }
   }
 
