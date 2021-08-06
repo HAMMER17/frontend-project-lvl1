@@ -15,7 +15,5 @@ export const question = () => {
   const correctAnswer = result[hiddenNumber];
   result[hiddenNumber] = '..';
   console.log(`Question: ${result.join(' ')}`);
-  return correctAnswer;
+  return String(correctAnswer);
 };
-
-export const correct = (num) => String(num);

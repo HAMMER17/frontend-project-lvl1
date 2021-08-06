@@ -1,15 +1,13 @@
 import readlineSync from 'readline-sync';
 import welcome from './welcome.js';
 
-const game = (description, question, correct) => {
+const game = (description, question) => {
   const name = welcome();
   console.log(description);
-  for (let i = 1; i <= 3;) {
-    const value = question();
+  for (let i = 1; i <= 3; i += 1) {
+    const correctAnswer = question();
     const answer = (readlineSync.question('Your answer: '));
-    const correctAnswer = correct(value);
     if (answer === correctAnswer) {
-      i += 1;
       console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);

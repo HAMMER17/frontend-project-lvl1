@@ -5,9 +5,6 @@ export const description = 'Answer "yes" if given number is prime. Otherwise ans
 export const question = () => {
   const num = getRandomInt(100, 1);
   console.log(`Question: ${num}`);
-  return num;
-};
-export const correct = (num) => {
   if (num === 1) {
     return 'no';
   }

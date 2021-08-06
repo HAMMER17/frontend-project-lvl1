@@ -9,19 +9,15 @@ export const question = () => {
   const character = items[getRandomInt(3, 0)];
   const expression = `${num1} ${character} ${num2}`;
   console.log(`Question: ${expression}`);
-  return [num1, num2, character];
-};
-
-export const correct = (num) => {
   let result;
-  if (num[2] === '+') {
-    result = String(num[0] + num[1]);
+  if (character === '+') {
+    result = String(num1 + num2);
   }
-  if (num[2] === '-') {
-    result = String(num[0] - num[1]);
+  if (character === '-') {
+    result = String(num1 - num2);
   }
-  if (num[2] === '*') {
-    result = String(num[0] * num[1]);
+  if (character === '*') {
+    result = String(num1 * num2);
   }
   return result;
 };

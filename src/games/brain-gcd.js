@@ -5,14 +5,7 @@ export const description = 'Find the greatest common divisor of given numbers.';
 export const question = () => {
   const num1 = getRandomInt(50, 1);
   const num2 = getRandomInt(50, 1);
-  const result = [num1, num2];
   console.log(`Question: ${num1} ${num2}`);
-  return result;
-};
-
-export const correct = (num) => {
-  const num1 = num[0];
-  const num2 = num[1];
   let result;
   if (num1 === num2) {
     result = String(num1);

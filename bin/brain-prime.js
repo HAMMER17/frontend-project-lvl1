@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
 import game from '../src/index.js';
-import { description, question, correct } from '../src/brain-prime/gameLogic.js';
+import { description, question } from '../src/games/brain-prime.js';
 
-game(description, question, correct);
+game(description, question);
