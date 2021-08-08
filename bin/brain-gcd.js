@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
 import game from '../src/index.js';
-import { description, question } from '../src/games/brain-gcd.js';
+import { description, getGameQuestionAndAnswer } from '../src/games/brain-gcd.js';
 
-game(description, question);
+game(description, getGameQuestionAndAnswer);

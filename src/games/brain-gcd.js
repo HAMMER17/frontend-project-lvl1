@@ -1,11 +1,7 @@
 import getRandomInt from '../getRandomInt.js';
 
 export const description = 'Find the greatest common divisor of given numbers.';
-
-export const question = () => {
-  const num1 = getRandomInt(50, 1);
-  const num2 = getRandomInt(50, 1);
-  console.log(`Question: ${num1} ${num2}`);
+const calculate = (num1, num2) => {
   let result;
   if (num1 === num2) {
     result = String(num1);
@@ -36,4 +32,13 @@ export const question = () => {
     }
   }
   return result;
+};
+
+export const getGameQuestionAndAnswer = () => {
+  const num1 = getRandomInt(50, 1);
+  const num2 = getRandomInt(50, 1);
+  const expression = `${num1} ${num2}`;
+  const result = calculate(num1, num2);
+  const arr = [expression, result];
+  return arr;
 };

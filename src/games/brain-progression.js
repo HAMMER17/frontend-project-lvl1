@@ -2,18 +2,23 @@ import getRandomInt from '../getRandomInt.js';
 
 export const description = 'What number is missing in the progression?';
 
-export const question = () => {
+const calculate = (firstNumber, add) => {
   const result = [];
-  const i = 0;
-  let firstNumber = getRandomInt(50, 1);
-  const add = getRandomInt(10, 1);
-  for (result[i]; result.length < 10; result[i + 1]) {
-    result.push(firstNumber);
-    firstNumber += add;
+  let newNumber = firstNumber;
+  for (let i = 0; i <= 10; i += 1) {
+    result.push(newNumber);
+    newNumber += add;
   }
+  return result;
+};
+
+export const getGameQuestionAndAnswer = () => {
+  const firstNumber = getRandomInt(50, 1);
+  const add = getRandomInt(10, 1);
+  const progression = calculate(firstNumber, add);
   const hiddenNumber = getRandomInt(3, 1);
-  const correctAnswer = result[hiddenNumber];
-  result[hiddenNumber] = '..';
-  console.log(`Question: ${result.join(' ')}`);
-  return String(correctAnswer);
+  const correctAnswer = progression[hiddenNumber];
+  progression[hiddenNumber] = '..';
+  const progress = progression.join(' ');
+  return [progress, String(correctAnswer)];
 };
