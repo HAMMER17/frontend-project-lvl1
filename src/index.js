@@ -5,7 +5,9 @@ const game = (description, getGameQuestionAndAnswer) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(description);
+
   const countOfraunds = 3;
+
   for (let i = 1; i <= countOfraunds; i += 1) {
     const arr = getGameQuestionAndAnswer();
     const [num, correctAnswer] = arr;
