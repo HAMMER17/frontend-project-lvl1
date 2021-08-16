@@ -10,12 +10,13 @@ const welcome = () => {
 const game = (description, getGameQuestionAndAnswer) => {
   const name = welcome();
   console.log(description);
-  for (let i = 1; i <= 3; i += 1) {
+  const countOfraunds = 3;
+  for (let i = 1; countOfraunds <= 3; i += 1) {
     const arr = getGameQuestionAndAnswer();
     const num = arr[0];
     const correctAnswer = arr[1];
     console.log(`Question: ${num}`);
-    const answer = ((readlineSync.question('Your answer: ')));
+    const answer = (readlineSync.question('Your answer: '));
     if (answer === String(correctAnswer)) {
       console.log('Correct!');
     } else {
