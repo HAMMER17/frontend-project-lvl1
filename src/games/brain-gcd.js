@@ -1,7 +1,7 @@
 import getRandomInt from '../getRandomInt.js';
 import game from '../index.js';
 
-export const description = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 const getGCD = (num1, num2) => {
   if (num1 === num2 || num2 === 0) {
     return num1;
@@ -9,16 +9,15 @@ const getGCD = (num1, num2) => {
   return getGCD(num2, num1 % num2);
 };
 
-export const getGameQuestionAndAnswer = () => {
+const getGameData = () => {
   const num1 = getRandomInt(1, 50);
   const num2 = getRandomInt(1, 50);
-  const expression = `${num1} ${num2}`;
-  const result = String(getGCD(num1, num2));
-  const arr = [expression, result];
-  return arr;
+  const question = `${num1} ${num2}`;
+  const correctAnswer = String(getGCD(num1, num2));
+  return [question, correctAnswer];
 };
 
 const startGame = () => {
-  game(description, getGameQuestionAndAnswer);
+  game(description, getGameData);
 };
 export default startGame;
