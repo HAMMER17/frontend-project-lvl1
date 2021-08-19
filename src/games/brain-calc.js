@@ -17,10 +17,10 @@ const getCalculated = (num1, num2, character) => {
 };
 
 const getGameData = () => {
-  const items = ['+', '-', '*'];
+  const operators = ['+', '-', '*'];
   const num1 = getRandomInt(1, 50);
   const num2 = getRandomInt(1, 50);
-  const character = items[getRandomInt(0, items.length)];
+  const character = operators[getRandomInt(0, operators.length - 1)];
   const correctAnswer = String(getCalculated(num1, num2, character));
   const question = `${num1} ${character} ${num2}`;
   return [question, correctAnswer];
