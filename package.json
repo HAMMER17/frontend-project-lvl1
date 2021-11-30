@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:HAMMER17/frontend-project-lvl1.git"
+    "url": "git + https://github.com/HAMMER17/frontend-project-lvl1.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "git@github.com:HAMMER17/frontend-project-lvl1.git/issues"
+    "url": "https://github.com/HAMMER17/frontend-project-lvl1.git/issues"
   },
-  "homepage": "git@github.com:HAMMER17/frontend-project-lvl1.git#readme",
+  "homepage": "https://github.com/HAMMER17/frontend-project-lvl1.git#readme",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
